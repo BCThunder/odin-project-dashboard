@@ -1,0 +1,146 @@
+:root {
+    --dashboard-blue:  rgb(51, 143, 255)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.dashboard {
+    min-height: 100vh;
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template-areas: 
+        "sidebar navbar"
+        "sidebar content";
+}
+
+.sidebar {
+    background-color: var(--dashboard-blue);
+    grid-area: sidebar;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+.sidebar li {
+    margin: 0.75rem 0;
+}
+
+.navbar {
+    background-color: white;
+    grid-area: navbar;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template-areas:
+        "searchbar profile"
+        "welcome nav-button-container";
+    align-items: center;
+}
+
+.navbar .searchbar {
+    grid-area: searchbar;
+}
+
+.navbar .profile {
+    grid-area: profile;
+}
+
+.navbar .welcome {
+    grid-area: welcome;
+}
+
+.navbar .nav-button-container {
+    grid-area: nav-button-container;
+}
+
+.nav-button {
+    background-color: var(--dashboard-blue);
+    color: white;
+    border-radius: 12px;
+}
+
+.content {
+    background-color: lightgray;
+    grid-area: content;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+    gap: 12px;
+    padding: 12px;
+}
+
+.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    grid-column: span 2;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border-left: 4px solid orange;
+    border-radius: 4px;
+    padding: 1rem;
+    min-height: 120px;
+    align-items: start;
+}
+
+.content .announcements {
+    grid-area: announcements;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements-container {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content > .projects > p,
+.content .announcements > p,
+.content .trending > p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+}
+
+.announcements-container,
+.trending-container {
+    min-height: 160px;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.content .trending {
+    grid-area: trending;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-container {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
