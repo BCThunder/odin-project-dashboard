@@ -9,47 +9,49 @@
 <body>
     <div class="dashboard">
         <div class="sidebar">
-            <img>
-            <p class="logo">Dashboard</p>
+            <div class="logo-container">
+                <img class="icon" src="./assets/logo-icon.svg" alt="logo">
+                <p class="logo">Dashboard</p>
+            </div>
 
             <ul>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/home-icon.svg" alt="Home">
                     Home
                 </li>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/profile-icon.svg" alt="Profile">
                     Profile
                 </li>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/message-icon.svg" alt="Message">
                     Messages
                 </li>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/history-icon.svg" alt="History">
                     History
                 </li>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/tasks-icon.svg" alt="Tasks">
                     Tasks
                 </li>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/communities-icon.svg" alt="Communities">
                     Communities
                 </li>
             </ul>
 
             <ul>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/settings-icon.svg" alt="Settings">
                     Settings
                 </li>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/support-icon.svg" alt="Support">
                     Support
                 </li>
                 <li>
-                    <img>
+                    <img class="icon" src="./assets/privacy-icon.svg" alt="Privacy">
                     Privacy
                 </li>
             </ul>
@@ -57,21 +59,26 @@
 
         <div class="navbar">
             <div class="searchbar">
-                <img>
+                <img class="icon" src="./assets/search-icon.svg" alt="Search">
                 <input>
             </div>
+
             <div class="profile">
-                <button>!</button>
-                <img>
+                <button type="button" class="empty-button">
+                    <img class="icon" src="./assets/bell-icon.svg" alt="Notifications">
+                </button>
+                <img class="profile-icon small" src="" alt="">
                 <p>Username</p>
             </div>
+
             <div class="welcome">
-                <img>
+                <img class="profile-icon large" src="" alt="">
                 <div class="welcome-text-container">
                     <p>Hi there,</p>
                     <p>Username @user</p>
                 </div>
             </div>
+
             <div class="nav-buttons-container">
                 <button class="nav-button">New</button>
                 <button class="nav-button">Upload</button>
@@ -83,9 +90,53 @@
             <div class="projects">
                 <p>Your Projects</p>
                 <div class="project-cards">
-                    <div class="card">Project 1</div>
-                    <div class="card">Project 2</div>
-                    <div class="card">Project 3</div>
+                    <div class="card">
+                        <p>Project 1</p>
+                        <p>This is a project for project purposes</p>
+                        <div class="card-button-container">
+                            <button type="button" class="empty-button">
+                                <img class="icon empty-button" src="./assets/star-icon.svg" alt="Favorite">
+                            </button>
+                            <button type="button" class="empty-button">
+                                <img class="icon empty-button" src="./assets/eye-icon.svg" alt="View">
+                            </button>
+                            <button type="button" class="empty-button">
+                                <img class="icon empty-button" src="./assets/node-icon.svg" alt="Share">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p>Project 2</p>
+                        <p>This is another project where projecting happens</p>
+                        <div class="card-button-container">
+                            <button type="button" class="empty-button">
+                                <img class="icon" src="./assets/star-icon.svg" alt="Favorite">
+                            </button>
+                            <button type="button" class="empty-button">
+                                <img class="icon empty-button" src="./assets/eye-icon.svg" alt="View">
+                            </button>
+                            <button type="button" class="empty-button">
+                                <img class="icon empty-button" src="./assets/node-icon.svg" alt="Share">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p>Project 3</p>
+                        <p>WAKE UP WAKE UP WAKE UP</p>
+                        <div class="card-button-container">
+                            <button type="button" class="empty-button">
+                                <img class="icon empty-button" src="./assets/star-icon.svg" alt="Favorite">
+                            </button>
+                            <button type="button" class="empty-button">
+                                <img class="icon empty-button" src="./assets/eye-icon.svg" alt="View">
+                            </button>
+                            <button type="button" class="empty-button">
+                                <img class="icon empty-button" src="./assets/node-icon.svg" alt="Share">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
